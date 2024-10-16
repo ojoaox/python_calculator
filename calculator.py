@@ -1,14 +1,14 @@
 import os
 
-def soma(x, y):
+def addition(x, y):
     print(f' {x} + {y} = {x+y}')
-def subtracao(x, y):
+def subtraction(x, y):
     print(f' {x} - {y} = {x-y}')
-def multiplicacao(x, y):
+def multiplication(x, y):
     print(f' {x} x {y} = {x*y}')
-def divisao(x, y):
+def division(x, y):
     print(f' {x} : {y} = {x/y}')
-def potenciacao(x, y):
+def exponentiation(x, y):
     print(f' {x} ^ {y} = {x**y}')
 
 calculator = True
@@ -26,15 +26,15 @@ while calculator:
         continue 
     print(10*'-')
     if operador == '+':
-        soma(number_1, number_2)
+        addition(number_1, number_2)
     elif operador == '-':
-        subtracao(number_1, number_2)
+        subtraction(number_1, number_2)
     elif operador == '*':
-        multiplicacao(number_1, number_2)
+        multiplication(number_1, number_2)
     elif operador == '/':
-        divisao(number_1, number_2)
+        division(number_1, number_2)
     elif operador == '**':
-        potenciacao(number_1, number_2)
+        exponentiation(number_1, number_2)
     else:
         print('Error identifying the operator. Please try again.')
         calculator = True
